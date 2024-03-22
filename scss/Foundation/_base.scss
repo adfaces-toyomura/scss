@@ -1,9 +1,17 @@
 @use "../Global/variable" as val;
-/* 使うときはasで変換
-    プロパティに指定する際はasで変換したもの.任意の変数で指定 */
+
 html {
-    font-weight: bold;
-    font-family: val.$baseFont;
+    font-weight: 500;
+    font-size: 62.5%;
+}
+
+a{
+    transition: 0.2s;
+}
+
+
+a,span{
+    display: inline-block;
 }
 
 img {
@@ -32,34 +40,4 @@ textarea {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
-}
-
-
-@media (min-width:851px) {
-    .tab-appea {
-        display: none;
-    }
-}
-
-@media (max-width:850px) {
-    .tab-none {
-        display: none;
-    }
-
-    select {
-        width: 100%;
-    }
-}
-
-
-@media (min-width:481px) {
-    .sp-appea {
-        display: none;
-    }
-}
-
-@media (max-width:480px) {
-    .sp-none {
-        display: none;
-    }
 }

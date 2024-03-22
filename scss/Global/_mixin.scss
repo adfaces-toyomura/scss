@@ -1,12 +1,15 @@
-/*
-例　読み込み　@use "../Global/mixin" as mix;
-    asでmixに変換
-    指定する際はasで変換したもの.任意の関数で指定
-    @include mix.flex;
+@mixin Serif() {
+    font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Ms P明朝", "MS PMincho", serif;
+}
 
-*/
+@mixin SansSerif() {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
 
-@mixin flex {
-    display: flex;
-    justify-content: space-between;
+@mixin NotoSans() {
+    font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+@mixin NotoSerif() {
+    font-family: "Noto Serif", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Ms P明朝", "MS PMincho", serif;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*----------------------------------------------------------------------------------------
 rest.scss
 ----------------------------------------------------------------------------------------*/
@@ -294,11 +293,17 @@ template {
   display: none;
 }
 
-/* 使うときはasで変換
-    プロパティに指定する際はasで変換したもの.任意の変数で指定 */
 html {
-  font-weight: bold;
-  font-family: "sans-serif";
+  font-weight: 500;
+  font-size: 62.5%;
+}
+
+a {
+  transition: 0.2s;
+}
+
+a, span {
+  display: inline-block;
 }
 
 img {
@@ -330,36 +335,6 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
-@media (min-width: 851px) {
-  .tab-appea {
-    display: none;
-  }
-}
-@media (max-width: 850px) {
-  .tab-none {
-    display: none;
-  }
-  select {
-    width: 100%;
-  }
-}
-@media (min-width: 481px) {
-  .sp-appea {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .sp-none {
-    display: none;
-  }
-}
-/*
-例　読み込み　@use "../Global/mixin" as mix;
-    asでmixに変換
-    指定する際はasで変換したもの.任意の関数で指定
-    @include mix.flex;
-
-*/
 /*----------------------------------------------------------------------------------------
 header.scss
 ----------------------------------------------------------------------------------------*/
@@ -375,6 +350,29 @@ project.scss
 /*----------------------------------------------------------------------------------------
 component.scss
 ----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------
+none.scss
+----------------------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+  .u-tabAppea {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .u-tabNone {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  .u-spAppea {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .u-spNone {
+    display: none;
+  }
+}
 /*----------------------------------------------------------------------------------------
 utility.scss
 ----------------------------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */
